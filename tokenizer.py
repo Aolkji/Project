@@ -28,7 +28,7 @@ class Tokenizer:
             elif c.isdigit():
                 num = self.read_number()
 
-                # ❗ Leading zero check
+                #  Check for leading zeros
                 if len(num) > 1 and num[0] == "0":
                     raise Exception("error")
 
